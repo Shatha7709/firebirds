@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,10 +15,18 @@
             line-height: 1.6;
             scroll-behavior: smooth;
         }
+        /* Header with logo */
         header {
-            background: linear-gradient(90deg, #FF4500, #FF0000, #FFD700);
+            background: linear-gradient(90deg, #FF0000, #FF4500, #FFD700);
             text-align: center;
             padding: 3rem 1rem;
+        }
+        header img {
+            display: block;
+            margin: 0 auto;
+            max-width: 250px;
+            hight: 250px;
+            object-fit:
         }
         header h1 {
             font-size: 3rem;
@@ -31,6 +37,7 @@
             font-size: 1.3rem;
             margin-top: 1rem;
         }
+        /* Navigation */
         nav {
             background-color: #FF4500;
             display: flex;
@@ -43,12 +50,11 @@
         }
         nav a {
             color: #fff;
-            font-weight: bold; /* Makes text bold */
-            font-style: italic; /* Italicizes text */
-            text-transform: uppercase; /* Converts text to uppercase */
-            
-            
+            font-weight: bold;
+            font-style: italic;
+            text-transform: uppercase;
             transition: color 0.3s;
+            text-decoration: none;
         }
         nav a:hover {
             color: #FFD700;
@@ -57,27 +63,42 @@
             padding: 4rem 10%;
             text-align: center;
         }
-        .about, .sponsorship {
+        /* First paragraph (Yellow Background, Black Text) */
+        .about p {
             background-color: #FFD700;
-            border-radius: 10px;
-            padding: 2rem;
-            margin-bottom: 2rem;
+            color: #000;
+            padding: 1rem;
+            border-radius: 5px;
         }
+        /* Second paragraph (Black Background, White Text) */
+        .sponsorship p {
+            background-color: #000;
+            color: #fff;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+        /* Gallery */
         .gallery img {
             width: 100%;
             max-width: 300px;
             border-radius: 10px;
             transition: transform 0.3s;
+           
+           
+           
         }
         .gallery img:hover {
             transform: scale(1.05);
+            
         }
         .gallery {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 20px;
+            
         }
+        /* Social Media */
         .social-links {
             display: flex;
             justify-content: center;
@@ -94,6 +115,7 @@
             transform: scale(1.2);
             color: #FFFF00;
         }
+        /* Footer */
         footer {
             text-align: center;
             padding: 1rem;
@@ -101,7 +123,8 @@
             color: #ccc;
         }
         @media (max-width: 768px) {
-            header h1 {
+            header img {
+                max-width:250;
                 font-size: 2rem;
             }
             .gallery {
@@ -114,7 +137,8 @@
 <body>
 
     <header>
-        <h1>Fire Bird </h1>
+        <img src="https://raw.githubusercontent.com/Shatha7709/firebirds/main/Fire%20Bird.jpg" alt="Fire Bird Logo">
+        <h1>Fire Bird</h1>
         <p>Adding fire to your race!</p>
     </header>
 
@@ -128,36 +152,32 @@
     <section id="about" class="about">
         <h2>About the Project</h2>
         <p>
-             We are a group of 5 dedicated girls from the Howard Of Effingham school . We are thrilled to share that we are entering an exciting 
-            competition as part of a STEAM project, where we will be competitng with thousands of students from around the world . Our goal is to 
-            inspire young girls like us not to shy away from science and technology but to embarce it . The challenge is to design and create a Formula 1 
-            car that can reach speeds of 50 mph in just 1.5 seconds . In addition to the car we will be creating our own kits and building a race track to 
-            qualify for this competiton, as well as reaching out to potential sponsors which will be advertised on our car and kit .
-            We hope you will join us on this journey because together we can' Add fire to your race.' 
+            We are a group of 5 dedicated girls from the Howard Of Effingham school. We are thrilled to share that we are entering an exciting 
+            competition as part of a STEAM project, where we will be competing with thousands of students from around the world. Our goal is to 
+            inspire young girls like us not to shy away from science and technology but to embrace it. The challenge is to design and create a Formula 1 
+            car that can reach speeds of 50 mph in just 1.5 seconds. In addition to the car, we will be creating our own kits and building a race track to 
+            qualify for this competition, as well as reaching out to potential sponsors who will be advertised on our car and kit.
+            We hope you will join us on this journey because together we can "Add fire to your race."
         </p>
     </section>
 
     <section id="products">
         <h2>Our Products</h2>
-        <p> a 3D printed car that can reach speeds of 50mph in just 1.5 seconds. </p>
-        <div class="gallery">
-            
-            <img src="https://github.com/Shatha7709/firebirds/blob/main/Fire%20Bird.jpg" alt="My Image" width="500">
-
-            <img src="https://via.placeholder.com/300x200?text=Product+2" alt="Product 2">
-            <img src="https://via.placeholder.com/300x200?text=Product+3" alt="Product 3">
-        </div>
+        <p>A 3D-printed car that can reach speeds of 50 mph in just 1.5 seconds.</p>
+       
+         <div class="gallery">
+           <img src="https://raw.githubusercontent.com/Shatha7709/formula1/refs/heads/main/yas-schools-detail-page-f1-in-schoolsgallery985x554px-web06.avif" alt="Yas School Details">
+          </div>
     </section>
 
     <section id="sponsorship" class="sponsorship">
         <h2>Sponsorship Opportunities</h2>
         <p>
-            We need your support in order to bring our project to life , we are seeking funding to help cover the costs of materials and equipment.
-            Imagine your company's logo on our car and kit , representing a team that stands for inclusivity,progress and innovation. 
-            By supporting us , you wouldn't just be helping a group of girls build a car - you'd be backing a future generation of female engineers and
-            technologists. Your company would be seen as a champion o gender equality and progress. If you are intrested please contact us via 
+            We need your support in order to bring our project to life. We are seeking funding to help cover the costs of materials and equipment.
+            Imagine your company's logo on our car and kit, representing a team that stands for inclusivity, progress, and innovation. 
+            By supporting us, you wouldn't just be helping a group of girls build a car – you'd be backing a future generation of female engineers and
+            technologists. Your company would be seen as a champion of gender equality and progress. If you are interested, please contact us via 
             our email at the bottom of the page. 
-           
         </p>
     </section>
 
@@ -165,14 +185,14 @@
         <h2>Connect with Us</h2>
         <p>Follow us on social media for the latest updates and opportunities:</p>
         <div class="social-links">
-            <a href="https://firebird_f1inschools" target="_blank">Instagram</a>
             
+            <a href="https://www.instagram.com/firebird_f1inschools/" target="_blank">Follow me on Instagram</a>
             <a href="mailto:julia.soud@icloud.com">Email Us</a>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2025 Formula 1 in schools copetition. All rights reserved.</p>
+        <p>&copy; 2025 Formula 1 in Schools Competition. All rights reserved.</p>
     </footer>
 
 </body>
